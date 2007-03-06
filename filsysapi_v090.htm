@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FILSYSAPI - File system API</title>
+<link rev="made" href="mailto:" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#general_description">GENERAL DESCRIPTION</a></li>
+	<li><a href="#subroutines">SUBROUTINES</a></li>
+	<ul>
+
+		<li><a href="#list_of_files_and_or_directories_for_a_single_directory">List of files and/or directories for a single directory</a></li>
+		<li><a href="#hash_of_files_and_or_directories_starting_from">Hash of files and/or directories starting from</a></li>
+	</ul>
+
+	<li><a href="#todo">TODO</a></li>
+	<li><a href="#bugs">BUGS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#version">VERSION</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>FILSYSAPI - File system API</p>
+<p>
+</p>
+<hr />
+<h1><a name="general_description">GENERAL DESCRIPTION</a></h1>
+<p>This module provides a simple api for various file system operations, like
+reading directories and subdirectories and returning a list of files and
+or subdirectories in either array or hash format. Below are some high
+level bullets describing functionality.</p>
+<p>i decided to put this together as i typically end up writing this code in
+my various scripts and realized this would be a nice candidate for reuse.</p>
+<p>
+</p>
+<hr />
+<h1><a name="subroutines">SUBROUTINES</a></h1>
+<p>
+</p>
+<h2><a name="list_of_files_and_or_directories_for_a_single_directory">List of files and/or directories for a single directory</a></h2>
+<p><code>my @arr = subdirfilList_singledir(&quot;c:/foobar&quot;)</code></p>
+<p><code>my @arr = subdirList_singledir(&quot;c:/foobar&quot;)</code></p>
+<p><code>my @arr = filList_singledir(&quot;c:/foobar&quot;)</code></p>
+<p>
+</p>
+<h2><a name="hash_of_files_and_or_directories_starting_from">Hash of files and/or directories starting from</a></h2>
+<p><code>my %hsh = filsdirsHash_startingfrom(&quot;c:/foobar&quot;)</code></p>
+<p><code>my %hsh = dirsHash_startingfrom(&quot;c:/foobar&quot;)</code></p>
+<p><code>my %hsh = filsHash_startingfrom(&quot;c:/foobar&quot;)</code></p>
+<p>
+</p>
+<hr />
+<h1><a name="todo">TODO</a></h1>
+<ul>
+<li></li>
+Change slashes to wintel format
+<p></p>
+<li></li>
+return data in xml format
+
+
+<p></p>
+<li></li>
+return duplicate files
+
+
+<p></p>
+<li></li>
+return root directory name only
+
+
+<p></p></ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs">BUGS</a></h1>
+<p>None i have found yet, though they certainly exist ;-)
+
+</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Eric Matthews   <a href="mailto:webmaster@anglesanddangles.com">webmaster@anglesanddangles.com</a>
+
+</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>Version 0.90    15 feb 2004
+
+</p>
+
+</body>
+
+</html>
